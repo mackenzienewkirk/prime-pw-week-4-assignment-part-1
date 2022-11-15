@@ -27,9 +27,11 @@ function addNumbers( firstNumber ) {
 
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
-
+function multiplyThree( number ){
+  return number * number * number;
 }
+console.log('Test - should multiply number by three', multiplyThree(3));
+
 
 
 // 5. Function that will return true if a number is positive, 
