@@ -21,9 +21,14 @@ function helloName( Kenzie ) {
 console.log('Test - should say "Hello, Kenzie!"', helloName());
 
 // 3. Function to add two numbers together & return the result
-function addNumbers( firstNumber ) {
+let firstNumber = 5;
+let secondNumber = 6;
+
+function addNumbers(firstNumber, secondNumber) {
   // return firstNumber + secondNumber;
 }
+console.log('Test- Should add two numbers', 5, 6 );
+// Output: 11
 
 
 // 4. Function to multiply three numbers & return the result
@@ -53,16 +58,35 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-function getLast( array ) {
 
+let array = [3, 6, 9, 12];
+let lastElement = array.pop();
+
+function getLast( array ) {
+  return lastElement
 }
+console.log(lastElement);
+// Output: 12
+
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
+let arraySecond = [3, 5, 7, 9];
+let value = 3;
+
 function find( value, array ){
   
+  for( let i = 0; i<array.length; i++ ){
+    console.log( 'for loop', array[i]);
+    if( array[i] === 3);{
+      console.log(true);
+    }
+    return value
+  }
+// Output: 3
 }
+console.log(find);
 
 // ----------------------
 // Stretch Goals
