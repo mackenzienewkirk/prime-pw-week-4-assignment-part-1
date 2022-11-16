@@ -23,20 +23,17 @@ console.log('Test - should say "Hello, Kenzie!"', helloName());
 // 3. Function to add two numbers together & return the result
 let firstNumber = 5;
 let secondNumber = 6;
-
 function addNumbers(firstNumber, secondNumber) {
   // return firstNumber + secondNumber;
 }
-console.log('Test- Should add two numbers', 5, 6 );
+console.log('Test- Should add two numbers', addNumbers );
 // Output: 11
-
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree( number ){
   return number * number * number;
 }
 console.log('Test - should multiply number by three', multiplyThree(3));
-
 
 
 // 5. Function that will return true if a number is positive, 
@@ -76,7 +73,7 @@ let arraySecond = [3, 5, 7, 9];
 let value = 3;
 
 function find( value, array ){
-  
+
   for( let i = 0; i<array.length; i++ ){
     console.log( 'for loop', array[i]);
     if( array[i] === 3);{
